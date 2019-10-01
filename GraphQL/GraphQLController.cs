@@ -16,7 +16,6 @@ namespace DotNetReactAndGraphQL.GraphQL
 
         public GraphQLController(ApplicationDbContext db) => _db = db;
 
-        [Authorize]
         public async Task<IActionResult> Post([FromBody] GraphQLQuery query)
         {
             var inputs = query.Variables.ToInputs();

@@ -40,6 +40,7 @@ namespace DotNetReactAndGraphQL
                 {
                     options.Authority = "{yourOktaDomain}/oauth2/default";
                     options.Audience = "api://default";
+                    options.RequireHttpsMetadata = false;
                 });
         }
 
